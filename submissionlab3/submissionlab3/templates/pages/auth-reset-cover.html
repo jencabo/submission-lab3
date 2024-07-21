@@ -1,0 +1,34 @@
+{% extends "layouts/base-auth-cover.html" %}
+
+{% block title %} Reset Cover {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block authcoverimg %}
+<img src="{{ ASSETS_ROOT }}/images/auth/auth-cover-reset-bg.svg" alt="" class="img-fluid">
+{% endblock authcoverimg %}
+
+{% block content %}
+<div class="wd-50 mb-5">
+    <img src="{{ ASSETS_ROOT }}/images/logo-abbr.png" alt="" class="img-fluid">
+</div>
+<h2 class="fs-20 fw-bolder mb-4">Reset</h2>
+<h4 class="fs-13 fw-bold mb-2">Reset to your username/password</h4>
+<p class="fs-12 fw-medium text-muted">Enter your email and a reset link will sent to you, let's access our the best recommendation for you.</p>
+<form action="auth-resetting-cover.html" class="w-100 mt-4 pt-2">
+    <div class="mb-4">
+        <input class="form-control" placeholder="Email or Username" required>
+    </div>
+    <div class="mt-5">
+        <button type="submit" class="btn btn-lg btn-primary w-100">Reset Now</button>
+    </div>
+</form>
+<div class="mt-5 text-muted">
+    <span> Don't have an account?</span>
+    <a href="auth-register-cover.html" class="fw-bold">Create an Account</a>
+</div>
+{% endblock content %}
+

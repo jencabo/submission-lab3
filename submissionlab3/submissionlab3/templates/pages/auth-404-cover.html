@@ -1,0 +1,32 @@
+{% extends "layouts/base-auth-cover.html" %}
+
+{% block title %} 404 Cover {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block authcoverimg %}
+<img src="{{ ASSETS_ROOT }}/images/auth/auth-cover-404-bg.svg" alt="" class="img-fluid">
+{% endblock authcoverimg %}
+
+{% block content %}
+<div class="wd-50 mb-5">
+    <img src="{{ ASSETS_ROOT }}/images/logo-abbr.png" alt="" class="img-fluid">
+</div>
+<h4 class="fw-bold mb-2">Page not found</h4>
+<p class="fs-12 fw-medium text-muted">Sorry, the page you are looking for can't be found. Please check the URL or try to a different page on our site.</p>
+<h2 class="fw-bolder mb-4" style="font-size: 120px">4<span class="text-danger">0</span>4</h2>
+<div class="mt-5">
+    <a href="index.html" class="btn btn-light-brand w-100">Back Home</a>
+</div>
+{% endblock content %}
+
+{% block components %} 
+
+{% endblock components %}
+
+{% block javascripts %}
+
+{% endblock javascripts %}
